@@ -6,6 +6,6 @@ class Z
 {
     public function abc($xyz)
     {
-        exec("cp " . $xyz . " .");
+        exec("cp " . escapeshellarg($xyz) . " .");
     }
 }
